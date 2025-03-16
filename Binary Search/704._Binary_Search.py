@@ -3,11 +3,8 @@ from typing import List
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         
-        if target not in nums:
-            return -1
-
         l = 0
-        r = len(nums)
+        r = len(nums) -1
 
 
 
@@ -20,5 +17,5 @@ class Solution:
                 l = m+1
             else:
                 return m
+        return -1
         
-                
